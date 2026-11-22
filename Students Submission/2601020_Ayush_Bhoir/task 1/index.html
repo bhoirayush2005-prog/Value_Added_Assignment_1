@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- this line tells the browser that the document is written in HTML5 -->
+<html lang="en"> <!-- here we set english as the primary language of the page -->
+<head> <!-- this section contains the title and other information for the browser -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- helps the page fit on mobile and desktop screens -->
+  <title>DSA Tracker</title> <!-- this is the title displayed in the browser tab -->
+  <link rel="stylesheet" href="style.css" /> <!-- this line connects the external CSS file -->
+</head>
+<body> <!-- all content visible in the browser is written inside this tag -->
+  <!-- header section starts here -->
+  <header class="navbar"> <!-- this displays the top navigation bar -->
+    <a href="#" class="brand">
+      <img src="04.png" alt="Logo" /> <!-- logo image of the DSA Tracker website -->
+      <span>DSA Tracker</span> <!-- name of the website -->
+    </a>
+
+    <nav class="nav-links"> <!-- navigation menu for moving to different sections -->
+      <a href="#" class="active">Home</a>
+      <a href="#problems">Problems</a>
+      <a href="#leaderboard">Leaderboard</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a href="#get-started" class="btn-filled">Get Started</a> <!-- button that takes the user to get started section -->
+  </header> <!-- header section ends here -->
+
+  <main>
+    <!-- hero section contains the main heading and introduction -->
+    <section class="hero">
+      <div class="hero-text"> <!-- left side of the hero section -->
+        <h1> <!-- main heading of the page -->
+          Practice DSA<br />
+          Track Progress<br />
+          Become <span>Job Ready</span>
+        </h1>
+        <p>Solve daily coding problems, track your progress, and build a strong DSA foundation.</p> <!-- short description about the website -->
+        <div class="hero-buttons"> <!-- buttons shown below the paragraph -->
+          <a href="#practice" class="btn-filled">Start Practicing →</a> <!-- button to begin practicing -->
+          <a href="#problems" class="btn-outline">View Problems</a> <!-- button to view available problems -->
+        </div>
+      </div>
+
+      <div class="hero-img"> <!-- right side of the hero section -->
+        <img src="05.png" alt="Developer illustration" /> <!-- main illustration image -->
+      </div>
+    </section> <!-- hero section ends here -->
+
+    <!-- feature cards section starts here -->
+    <section class="cards-area">
+      <div class="cards-grid"> <!-- grid used to arrange all three cards -->
+        <article class="card"> <!-- first feature card -->
+          <img src="03.png" alt="Daily Challenges" /> <!-- icon for daily challenges -->
+          <h2>Daily Challenges</h2> <!-- title of the first card -->
+          <p>Solve a new problem every day</p> <!-- description of the first card -->
+        </article>
+
+        <article class="card"> <!-- second feature card -->
+          <img src="02.png" alt="Track Progress" /> <!-- icon for tracking progress -->
+          <h2>Track Progress</h2> <!-- title of the second card -->
+          <p>See your improvement over time</p> <!-- description of the second card -->
+        </article>
+
+        <article class="card"> <!-- third feature card -->
+          <img src="01.png" alt="Leaderboard" /> <!-- icon for leaderboard -->
+          <h2>Leaderboard</h2> <!-- title of the third card -->
+          <p>Compete with your peers</p> <!-- description of the third card -->
+        </article>
+      </div>
+    </section> <!-- feature cards section ends here -->
+  </main> <!-- main content ends here -->
+</body> <!-- body section ends here -->
+</html> <!-- end of the HTML document -->
