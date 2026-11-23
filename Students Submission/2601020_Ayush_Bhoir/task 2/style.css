@@ -79,3 +79,61 @@ body {
   font-weight: bold;
 }
 
+.logout {
+  /* Separate the logout link from the other menu links */
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0;
+  padding-top: 18px;
+  margin-top: 20px;
+}
+
+/* Keep the top bar and main content inside the remaining page space */
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  /* Place the page title on the left and user details on the right */
+  background-color: #ffffff;
+  padding: 16px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eceaf4;
+}
+
+.topbar h1 {
+  font-size: 22px;
+}
+
+.user-box {
+  /* Keep the notification icon, photo, and name in one row */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bell {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content {
+  /* Add space around the dashboard sections */
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
