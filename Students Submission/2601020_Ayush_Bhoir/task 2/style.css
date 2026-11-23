@@ -137,3 +137,64 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+
+/* The banner welcomes the student at the top of the dashboard */
+.banner {
+  background-color: #ece6fc;
+  border-radius: 14px;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.banner p {
+  color: #4f4c63;
+  font-size: 14px;
+}
+
+.banner-img {
+  /* The image shrinks if the screen is smaller than the set width */
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Show the four summary cards in one row on large screens */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat-card {
+  /* Center each icon and its number inside the card */
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stat-card img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.stat-card strong {
+  font-size: 20px;
+  display: block;
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #555366;
+}
+
