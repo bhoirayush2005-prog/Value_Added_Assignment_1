@@ -53,3 +53,29 @@ body {
   margin-bottom: auto;
 }
 
+.menu a,
+.logout {
+  /* Give every link the same spacing and text style */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #d6d2ea;
+  text-decoration: none;
+  padding: 11px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.menu a img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.menu a.active {
+  /* Highlight the page that the user is currently viewing */
+  background-color: #6738d9;
+  color: #ffffff;
+  font-weight: bold;
+}
+
