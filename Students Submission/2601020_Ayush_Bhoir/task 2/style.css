@@ -309,3 +309,36 @@ body {
   border-radius: 8px;
 }
 
+/* Change the layout when the screen becomes smaller */
+@media (max-width: 900px) {
+  /* Use two card columns on medium-sized screens */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottom-grid {
+    /* Stack the panels so each one has enough space */
+    grid-template-columns: 1fr;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  /* On small screens, place the sidebar above the content */
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .stats-grid {
+    /* Show one summary card per row on a phone */
+    grid-template-columns: 1fr;
+  }
+}
