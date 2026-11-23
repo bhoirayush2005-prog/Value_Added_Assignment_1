@@ -29,3 +29,27 @@ body {
   justify-content: space-between;
 }
 
+.logo {
+  /* Keep the logo image and its name on the same line */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 28px;
+  padding: 0 8px;
+}
+
+.logo img {
+  width: 30px;
+  height: auto;
+}
+
+.menu {
+  /* Stack all menu links from top to bottom */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: auto;
+}
+
