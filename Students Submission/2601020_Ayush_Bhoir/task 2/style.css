@@ -198,3 +198,114 @@ body {
   color: #555366;
 }
 
+/* Use a different light background for each type of information */
+.purple-bg { background-color: #ebe4fc; }
+.green-bg  { background-color: #e4f7ea; }
+.yellow-bg { background-color: #fcf4d9; }
+.pink-bg   { background-color: #fce5eb; }
+
+/* Place the course and assignment panels side by side */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.panel {
+  /* A white panel keeps each group of information easy to read */
+  background-color: #ffffff;
+  border: 1px solid #eae7f3;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.panel h2 {
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+
+.course-item,
+.assign-item {
+  /* Each list item keeps its icon, text, and extra details aligned */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.badge {
+  /* All course icons use the same size and shape */
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: #6738d9;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-info,
+.assign-info {
+  /* Let the text use the empty space between the icon and progress */
+  flex: 1;
+}
+
+.course-info h3,
+.assign-info h3 {
+  font-size: 14px;
+}
+
+.course-info p,
+.assign-info p {
+  font-size: 12px;
+  color: #6b687d;
+}
+
+.progress-wrap {
+  /* Keep the percentage and progress bar at a fixed width */
+  width: 110px;
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bar {
+  /* This is the empty part of the progress bar */
+  width: 100%;
+  height: 6px;
+  background-color: #e7e3f5;
+  border-radius: 99px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.fill {
+  /* The w-70, w-80, and w-85 classes set the completed amount */
+  height: 100%;
+  background-color: #6738d9;
+}
+
+.w-80 { width: 80%; }
+.w-70 { width: 70%; }
+.w-85 { width: 85%; }
+
+.assign-item img {
+  /* Assignment icons stay small so they do not push the text away */
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.status {
+  /* This label shows that the assignment is still waiting to be done */
+  background-color: #ffe6ec;
+  color: #d62858;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
