@@ -1,0 +1,31 @@
+* {
+  /* This keeps element sizes easy to control */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* These are the default font and colors for the whole page */
+  font-family: Arial, sans-serif;
+  background-color: #f8f7fc;
+  color: #151522;
+}
+
+/* Put the sidebar and the dashboard next to each other */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  /* The sidebar uses a dark color so it stands out from the page */
+  width: 220px;
+  background-color: #1f1646;
+  color: #ffffff;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
